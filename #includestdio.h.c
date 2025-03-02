@@ -1,9 +1,18 @@
-#include<stdio.h>
-int main()
-{
-int a = 5;
+#include <stdio.h>
 
-printf("the number %i\n", a);
+int main() {
+    int age;
+    char status;
 
-return 0;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    status = (age > 22) ? 'M' : 'U';
+
+    if (status == 'M')
+        printf("Married\n");
+    else
+        printf("Unmarried\n");
+
+    return 0;
 }
